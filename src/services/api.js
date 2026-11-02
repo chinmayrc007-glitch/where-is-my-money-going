@@ -1,12 +1,10 @@
 const API_URL =
-    import.meta.env.VITE_API_URL ||
-    "http://localhost:5000/api";
+    "https://where-is-my-money-going-api.onrender.com/api";
 
 
 // ============================================================
 // AUTH
 // ============================================================
-
 export async function registerUser(
     name,
     email,
@@ -28,7 +26,6 @@ export async function registerUser(
                 })
             }
         );
-
     const data =
         await response.json();
 
@@ -41,7 +38,6 @@ export async function registerUser(
 
     return data;
 }
-
 
 export async function loginUser(
     email,
@@ -108,7 +104,6 @@ export async function getCurrentUser(
 // ============================================================
 // TRANSACTIONS
 // ============================================================
-
 export async function getTransactions(
     token
 ) {
@@ -136,7 +131,6 @@ export async function getTransactions(
 
     return data;
 }
-
 
 export async function createTransaction(
     token,
@@ -171,7 +165,6 @@ export async function createTransaction(
 
     return data;
 }
-
 
 export async function updateTransaction(
     token,
@@ -208,7 +201,6 @@ export async function updateTransaction(
     return data;
 }
 
-
 export async function deleteTransaction(
     token,
     id
@@ -242,7 +234,6 @@ export async function deleteTransaction(
 // ============================================================
 // BUDGETS
 // ============================================================
-
 export async function getBudget(
     token,
     month
@@ -271,7 +262,6 @@ export async function getBudget(
 
     return data;
 }
-
 
 export async function setBudget(
     token,
@@ -309,7 +299,6 @@ export async function setBudget(
     return data;
 }
 
-
 export async function deleteBudget(
     token,
     month
@@ -343,7 +332,6 @@ export async function deleteBudget(
 // ============================================================
 // RECURRING TRANSACTIONS
 // ============================================================
-
 export async function getRecurringTransactions(
     token
 ) {
@@ -371,7 +359,6 @@ export async function getRecurringTransactions(
 
     return data;
 }
-
 
 export async function createRecurringTransaction(
     token,
@@ -407,7 +394,6 @@ export async function createRecurringTransaction(
     return data;
 }
 
-
 export async function processRecurringTransactions(
     token
 ) {
@@ -435,7 +421,6 @@ export async function processRecurringTransactions(
 
     return data;
 }
-
 
 export async function toggleRecurringTransaction(
     token,
@@ -465,7 +450,6 @@ export async function toggleRecurringTransaction(
 
     return data;
 }
-
 
 export async function deleteRecurringTransaction(
     token,
@@ -500,7 +484,6 @@ export async function deleteRecurringTransaction(
 // ============================================================
 // EXPORT
 // ============================================================
-
 export {
     API_URL
 };
