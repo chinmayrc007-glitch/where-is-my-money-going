@@ -2,6 +2,20 @@
 
 A full-stack personal finance tracker for managing income, expenses, budgets, recurring transactions, and spending analytics.
 
+## Screenshots
+
+### Dashboard
+
+![Dashboard](public/screenshots/dashboard.png)
+
+### Transactions
+
+![Transactions](public/screenshots/transactions.png)
+
+### Analytics
+
+![Analytics](public/screenshots/analytics.png)
+
 ## Features
 
 - User registration and login with JWT authentication
